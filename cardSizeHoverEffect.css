@@ -1,0 +1,56 @@
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+}
+
+.cards {
+    width: 200px;
+    height: 133px;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+
+    transform-origin: center top;
+    transition: 1000ms all;
+}
+
+.cards > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.cards > .title {
+    font-family: sans-serif;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+}
+
+.cards-container:hover .cards {
+    opacity: 0.5;
+}
+
+.cards:hover {
+    opacity: 1 !important;
+    transform: scale(1.2);
+}
+
+.cards:hover ~ .cards {
+    transform: translate3d(0, 27px, 0);
+}
+
+.title {
+    color: black;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+
